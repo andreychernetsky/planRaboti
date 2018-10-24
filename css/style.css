@@ -1,0 +1,279 @@
+*::after,
+*::before {
+	-webkit-box-sizing:border-b0x;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.clearfix:after,
+.grid::after
+{
+	content:"";
+	display: table;
+	clear: both;
+}
+html {
+	font-size: 100%;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #000;
+	font-size: 1.3rem;
+	line-height: 1.375;
+	margin: 0;
+}
+.wrapper {
+	max-width: 1680px;
+	min-width: 320px;
+}
+.header-top {
+	margin: 0 auto;
+	width:1200px;
+	height: 60px;
+	top: 0;
+	border-bottom: 1px solid #ccc;
+	padding: 1.5rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	
+}
+.logo__link:hover {
+  
+}
+
+.logo__brand {
+	width: 70px;
+	height: 70px
+}
+.nav-menu {
+
+}
+.nav-menu__list {
+  
+}
+.nav-menu__item {
+  display: inline-block;
+  list-style-type: none;
+}
+.nav-menu__link {
+  margin:0  10px 0 0;
+  text-decoration: none; 
+}
+.nav-menu__link:hover {
+  color: green;
+}
+/*бургер для мобилки*/
+.btn-menu {
+  border: 0;
+  background:none;
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+
+}
+.btn-menu:hover {
+	background: #dadada;
+}
+.btn-menu__line {
+	display: block;
+	width: 20px;
+	height: 2px;
+	border-radius: 1px;
+	background: #000;
+	margin-bottom: 3px;
+}
+.btn-menu__line:last-child {
+	border-bottom: 0;
+
+}
+.contacts__phone {
+	font-weight: 700;
+	font-size: 1.5625rem;
+	color: #000;
+}
+
+.wrap {
+	max-width: 990px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block-wrap{
+	width: 68%;
+	margin: 0 auto;
+	padding: 0 0 10px;
+	box-sizing: border-box;
+	/*outline: 1px solid black;*/
+	margin: 5px 50px 5px 0;
+}
+/*левый блок*/
+.block-wrap__left {
+ 
+ /*outline: 1px solid green;*/
+}
+
+/*правый блок*/
+.block-wrap__right{
+top:29%;
+width: 29%;
+position: fixed;
+right: 0;
+/*outline: 1px solid green;*/
+}
+.links-list {
+	
+}
+.links-list__item {
+	list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.links-list__title {
+	color: #3d4449;
+	margin: 0;
+}
+.sub-block__item{
+font-size:1.2rem;
+border-bottom:1px solid rgba(210, 215, 217, 0.75);
+}
+
+.sub-block__item:last-child {
+	border: none;
+}
+.links-list__sub-list {
+
+}
+.sub-block__link {
+	display: inline-block;
+	padding: 10px;
+	border: none;
+	color: #656766;
+
+}
+.sub-block__link:hover {
+	background:#f5f6f7;
+}
+/*социальные иконки*/
+.social-icons{
+	position: fixed;
+	top: 50%;
+	left: 0;
+	z-index: 1000;
+}
+.dws-button{
+	background-color: #3b5998;
+	width: 100px;
+	height: 25px;
+	padding: 5px;
+	transition: all 0.5s;
+}
+.social-icons__link{
+	color: #ffffff;
+	text-decoration: none;
+}
+.social-icons__link i.fab{
+	font-size: 25px;
+	text-align: center;
+	display: block;
+}
+.dws-share{
+	float: left;
+	width: 40px;
+}
+.dws-text{
+	float: right;
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+	right: 5px;
+}
+/*.dws-facebook {background-color: #3b5998;}*/
+.dws-vk {background-color: #507299;}
+.dws-youtube {background-color: #e62117;}
+/*.dws-envelope-o {background-color: #656766;}*/
+
+.dws-button{
+	width: 40px;
+	height: 25px;
+	padding: 5px;
+	overflow: hidden;
+}
+.dws-button:hover{
+	background-color: #000;
+	width: 50px;
+	padding-left: 15px;
+}
+/*.dws-facebook:hover{width: 75px}*/
+.dws-vk:hover,.dws-youtube:hover{width: 95px}
+
+/*оформление блока с текстом*/
+.block-wrap__left{
+	margin: 0% 2% 2% 2%;
+	box-sizing: border-box;
+}
+
+.img {
+	
+}
+.img__brand {
+ max-width: 50%;
+ float: left;
+ margin:0 3% 3% 0;
+}
+.block-wrap__text {
+  text-align:justify;
+
+}
+.span {
+ font-size: 1.5rem;	
+ font-weight: 600;
+}
+.page-main__title {
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: 400;
+	margin:2rem 0;
+}
+
+.headline {
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: 400;
+	margin:2rem 0;
+}
+
+/*оформление footer*/
+.footer {
+	padding: 1.2rem;
+}
+.footer__copyright {
+	text-align: right;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.footer__link {
+	color:inherit;
+	text-decoration: none;
+}
+.footer__link:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
