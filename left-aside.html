@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>left-aside</title>
+	<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+     <meta property = "og:locale" content = "ru_RU">
+    <meta property = "og:type" content="website">
+    <meta property = "og:title" content="Библия музыканта">
+    <meta property = "og:url" content="#">
+    <meta property = "og:site" content="#">
+    <meta property = "og:site_name" content="разработка программы">
+    <meta name = "viewport" content="width = device-witth, initial-scale=1,maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+	
+</head>
+<body>
+	<style>
+		.main {
+			background: #f5f6f7;
+			min-height: 100vh;
+			padding: 20px;
+			width: 350px;
+			transition: 300ms ease;
+			position: fixed;
+			top:0;
+			bottom:0;
+			z-index: 10;
+			overflow-y: auto;
+		}
+		.main__scroll {
+
+		}
+		.ain__top-title {
+
+		}
+		.main__title {
+          
+		}
+		.main__list {
+           margin: 0 0 15px 0;
+           padding: 0 0 0 15px;
+		}
+		.main__item {
+
+		}
+
+		.main__link {
+			text-decoration: none;
+			display: block;
+			text-transform:uppercase;
+			font-size: 12px;
+			padding: 10px 0;
+			border-bottom: none;
+		}
+		.main__sub-list {
+          display: block;
+		}
+		.sub-block__item {
+            border-top:1px solid rgba(210,215,217,0.75);
+		}
+		.sub-block__link {
+			padding: 17px 0;
+			font-size: 14px;
+			color:#3d4449;
+		}
+		.sub-block__link:hover {
+			color:#f56a6a;
+		}
+		.main__item_submenu {
+			position: relative;
+		}
+		.main__item_submenu:after {
+			content:"";
+			position: absolute;
+			right: 0;
+			top: 20px;
+			width: 5px;
+			height: 5px;
+			border-top:2px solid #676d79;
+			border-right: 2px solid #676d79;
+			transform:rotate(135deg);
+			transition: 300ms ease;
+		}
+		.opened:after {
+            transform: rotate(-45deg);
+		}
+	</style>
+	<div class="wrapper">
+		 <nav class="main float-left hide">
+      <div class="main__scroll">
+        <header class="main__top-title">
+          <h2 class="main__title">Глава</h2>
+        </header>
+        <ul class="main__list">
+          <li class="main__item_submenu opened">
+          	<a href=""  class="main__link">Введение</a>
+          	<ul class="main__sub-list sub-block">
+          		<li class="sub-block__item">
+          			<a href="" class="sub-block__link">подзаголовок</a>
+          		</li>
+          	</ul>
+          </li>
+          <li class="main__item_submenu">
+          	<a href="" class="main__link">1 первый год</a>
+            <ul class="main__sub-list sub-block">
+          		<li class="sub-block__item">
+          			<a href="" class="sub-block__link">подзаголовки</a>
+          		</li>
+          	</ul>
+          </li>
+          <li class="main__item_submenu">
+          	<a href="" class="main__link">2-й год обучения</a>
+          	<ul class="main__sub-list sub-block">
+          		<li class="sub-block__item">
+          			<a href="" class="sub-block__link">подзаголовок</a>
+          		</li>
+          	</ul>
+          </li>
+          <li class="main__item_submenu">
+          	<a href="" class="main__link">3-й год обучения</a>
+          	<ul class="main__sub-list sub-block">
+          		<li class="sub-block__item">
+          			<a href="" class="sub-block__link">подзаголовок</a>
+          		</li>
+          	</ul>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+	</div>
+	<script>
+		siteMenu();
+		function siteMenu(){ 
+		let submenus = document.querySelectorAll('.main .main__item_submenu .sub-block__link ');
+		submenus.forEaach(function(item){
+			item.addEventListener('click',function(e){
+             this.parentNode.classList.toggle('opened');
+             this.querySelectorAll('.main__item_submenu').forEach((sub)=>sub.parentNode.classList.remove('opened'));
+             e.stopPropagation();
+			})
+		});
+		}
+	</script>
+</body>
+</html>
