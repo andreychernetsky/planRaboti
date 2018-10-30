@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+	body {
+  margin: 0;
+  padding: 0;
+  background: #fafbfd;
+  color: #676d79;
+  min-height: 100vh;
+  font-size: 17px;
+  font-family: "Open Sans Condensed", sans-serif; }
+  body * {
+    box-sizing: border-box; }
+  body.menu-open nav.main {
+    margin-left: 0; }
+  body.menu-open .offset-wrapper {
+    margin-left: 300px; }
+  @media screen and (max-width: 640px) {
+    body.menu-open .offset-wrapper {
+      margin-left: 0; }
+    body.menu-open .burger-button {
+      left: 100%;
+      margin-left: -100px; } }
+
+a {
+  color: #676d79;
+  text-decoration: none;
+  border-bottom: 1px dotted #676d79; }
+  a:hover {
+    border-bottom-color: transparent;
+    color: #0B8512; }
+
+h1, .h1 {
+  font-size: 47px;
+  color: #3d4449;
+  margin: 20px 0; }
+
+h2 {
+  color: #3d4449;
+  border-bottom: 2px solid #0B8512;
+  display: inline-block;
+  padding: 0 0 10px 0; }
+
+h3 {
+  font-size: 18px;
+  font-weight: 700; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+ul.no_list {
+  margin: 0;
+  padding: 0; }
+  ul.no_list li {
+    list-style: none; }
+
+.html-content h2 {
+  border-bottom: none; }
+
+	/*левый aside*/
+		nav.main {
+  background: #f5f6f7;
+  min-height: 100vh;
+  padding: 20px;
+  width: 350px;
+  transition: 300ms ease;
+ /* margin-left: -350px;*/
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  overflow-y: auto; }
+  nav.main ul a {
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 0;
+    border-bottom: none; }
+  nav.main ul li:hover > a {
+    color: #0B8512; }
+  nav.main ul li ul {
+    margin: 0 0 15px 0;
+    padding: 0 0 0 15px; }
+  nav.main > ul > li > a {
+    padding: 17px 0;
+    font-size: 14px;
+    color: #3d4449; }
+  nav.main > ul > li + li {
+    border-top: 1px solid rgba(210, 215, 217, 0.75); }
+  nav.main .submenu {
+    position: relative; }
+    nav.main .submenu:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 20px;
+      width: 5px;
+      height: 5px;
+      border-top: 2px solid #676d79;
+      border-right: 2px solid #676d79;
+      transform: rotate(135deg);
+      transition: 300ms ease; }
+    nav.main .submenu.opened:after {
+      transform: rotate(-45deg); }
+    nav.main .submenu.opened > ul {
+      display: block; }
+    nav.main .submenu > ul {
+      display: none; }
+    nav.main .submenu .submenu:after {
+      top: 10px; }
+  @media screen and (max-width: 640px) {
+    nav.main {
+      position: fixed;
+      width: 100vw;
+      z-index: 99;
+      margin-left: -100vw; } }
+
+   /*  burger-button*/
+   .burger-button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 38px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 100;
+  transition: 300ms ease; }
+  .burger-button:focus {
+    outline: none; }
+  .burger-button:hover:after {
+    box-shadow: 0 4px 0 2px #B85B5B, 0 13px 0 2px #B85B5B, 0 22px 0 2px #B85B5B; }
+  .burger-button:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    left: 8px;
+    box-shadow: 0 4px 0 2px #0B8512, 0 13px 0 2px #0B8512, 0 22px 0 2px #0B8512; }
+  .burger-button:before {
+    content: '';
+    width: 60%;
+    height: 48%;
+    background: rgba(210, 215, 217, 0.75);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 5px;
+    display: none; }
+  @media screen and (max-width: 640px) {
+    .burger-button {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 87px; }
+      .burger-button:hover:after {
+        box-shadow: 0 4px 0 2px #B85B5B, 0 12px 0 2px #B85B5B, 0 20px 0 2px #B85B5B; }
+      .burger-button:after {
+        top: 37%;
+        right: 40%;
+        left: 40%;
+        box-shadow: 0 4px 0 2px #0B8512, 0 12px 0 2px #0B8512, 0 20px 0 2px #0B8512; }
+      .burger-button:before {
+        display: block; } }
+	</style>
+	<nav class="main float-left hide">
+    <div class="scroll">
+        <header>
+            <h2>Оглавление</h2>
+        </header>
+        <ul class="no_list">
+            <li><a href="https://mas4erlomas4er.github.io/Main-Page-/" target="_blank">Главная</a></li>
+            <li><a href="calendar.html#" target="_blank">Новостной блок</a></li>
+           <!--  <li><a href="#" target="_blank">Календарь</a></li> -->
+            <li class="opened submenu">
+                <a href="#" target="_blank">Введение</a>
+                <ul>
+                    <li><a href="#" target="_blank">Актуальность программы </a></li>
+                    <li><a href="#" target="_blank">Принципы построения программы</a></li>
+                    <li><a href="#" target="_blank">Цель программы </a></li>
+                    <li><a href="#" target="_blank">Цель программы </a></li>
+                    <li><a href="#" target="_blank">Задачи программы</a></li>
+                </ul>
+            </li>
+            <li class="opened submenu"">
+                <a href="#">Содержание образовательной <br> области 1-го года обучения</a>
+                <ul>
+	              <li><a href="#" target="_blank"> Вводное занятие </a></li>
+	              <li><a href="#" target="_blank">Знакомство с инструментом, посадка,<br> постановка игрового аппарата.</a></li>
+	              <li><a href="#" target="_blank">Основы музыкальной грамоты</a></li>
+	              <li><a href="#" target="_blank"> Развитие исполнительской техники</a></li>
+	              <li><a href="#" target="_blank">Формирование музыкально-творческих навыков</a></li>
+	              <li><a href="#" target="_blank"> Работа над репертуаром</a></li>
+	              <li><a href="#" target="_blank"> Настройка инструмента</a></li>
+	              <li><a href="#" target="_blank">  Беседы о музыкальной культуре разных стран,<br> жанрах и стилях в музыке</a></li>
+	              <li><a href="#" target="_blank"> Индивидуальная работа с учащимися </a></li>
+	              <li><a href="#" target="_blank"> Репетиционно – постановочные работы </a></li>
+	              <li><a href="#" target="_blank"> Концертная деятельность.  </a></li>
+	              <li><a href="#" target="_blank"> Воспитательная работа и социально значимая деятельность.</a></li>
+	              <li><a href="#" target="_blank"> Итоговое занятие </a></li>
+	              <li><a href="#" target="_blank"> Ожидаемые результаты 1 года обучения. </a></li>
+                </ul>
+            </li>
+               <li class="opened submenu">
+                <a href="#" target="_blank"></a>
+                <ul>
+                    <li><a href="#" target="_blank">Актуальность программы </a></li>
+                    <li><a href="#" target="_blank">Принципы построения программы</a></li>
+                    <li><a href="#" target="_blank">Цель программы </a></li>
+                    <li><a href="#" target="_blank">Цель программы </a></li>
+                    <li><a href="#" target="_blank">Задачи программы</a></li>
+                </ul>
+            </li>
+        </ul>         
+    </div>
+    <button class="burger-button" id="burger-button"></button>
+</nav>
+ 
+ <script>
+ 	siteMenu();
+
+
+function siteMenu() {
+    //меню сйта
+    let submenus = document.querySelectorAll('nav.main .submenu >a');
+    submenus.forEach(function (item) {
+        item.addEventListener('click', function (e) {
+            this.parentNode.classList.toggle('opened');
+            this.querySelectorAll('.submenu')
+                .forEach((sub) => sub.parentNode.classList.remove('opened'));
+            e.stopPropagation();
+        })
+    });
+}
+
+let burger = document.querySelector('#burger-button');
+let body = document.querySelector('body');
+let nav = document.querySelector('nav.main');
+let timeout;
+
+nav.addEventListener('mouseover', function () {
+    clearTimeout(timeout);
+});
+
+nav.addEventListener('mouseout', function () {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+        body.classList.remove('menu-open');
+    }, 2000);
+});
+
+burger.addEventListener('click', function () {
+    body.classList.toggle('menu-open');
+});
+
+ </script>
+</body>
+</html>

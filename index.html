@@ -4,36 +4,50 @@
     <title> Библия музыканта </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-     <meta property = "og:locale" content = "ru_RU">
-    <meta property = "og:type" content="website">
-    <meta property = "og:title" content="Библия музыканта">
-    <meta property = "og:url" content="#">
-    <meta property = "og:site" content="#">
-    <meta property = "og:site_name" content="разработка программы">
-    <meta name = "viewport" content="width = device-witth, initial-scale=1,maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Библия музыканта">
+    <meta property="og:url" content="#">
+    <meta property="og:site" content="#">
+    <meta property="og:site_name" content="разработка программы">
+    <meta name="viewport" content="width = device-witth, initial-scale=1,maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
 
 </head>
 <body>
+<style>
+    #fixd-menu {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+</style>
 <div class="wrapper">
-   <header class="header-top">
+    <header class="header-top">
         <div class="logo">
             <a href="https://andreychernetsky.github.io/news-block/index.html" class="logo__link">
                 <img src="images/1387.jpg" alt="" class="logo__brand">
             </a>
         </div>
-        <nav class="nav-menu">
+        <nav class="nav-menu" id="fixd-menu">
             <ul class="nav-menu__list">
                 <li class="nav-menu__item">
-                  <a href="https://andreychernetsky.github.io/first-lesson/public/index.html" class="nav-menu__link">Главная</a>
+                    <a href="https://andreychernetsky.github.io/first-lesson/public/index.html" class="nav-menu__link">Главная</a>
                 </li>
                 <li class="nav-menu__item">
-                  <a href="https://andreychernetsky.github.io/site-for-git/#" class="nav-menu__link">о себе</a>
+                    <a href="https://andreychernetsky.github.io/site-for-git/#" class="nav-menu__link">о себе</a>
                 </li>
             </ul>
         </nav>
@@ -50,295 +64,372 @@
     <div class="wrap">
 
         <div class="block-wrap">
+            <!-- правый контент -->
+            <aside class="block-wrap__right">
+
+                <nav class="sidebar">
+                    <ul class="links-list">
+                        <li class="links-list__item">
+                            <h2 class="links-list__title">Глава</h2>
+                            <ul class="links-list__sub-list sub-block">
+                                <li class="sub-block__item">
+                                    <a href="" class="sub-block__link">Введение</a>
+                                </li>
+                                <li class="sub-block__item ">
+                                    <a href="" class="sub-block__link"> 1 год обучения</a>
+                                </li>
+                                <li class="sub-block__item">
+                                    <a href="" class="sub-block__link">2 год обучения</a>
+                                </li>
+                                <li class="sub-block__item">
+                                    <a href="Содержание образовательной области 3-го года обучения"
+                                       class="sub-block__link">
+                                        3 год обучения</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </aside>
             <section class="block-wrap__left">
-              <article class="block-wrap__article">  
-                <h2 class="headline"> Введение </h2> 
-                <div class="img">
-                  <a href="https://vk.com/id459488160?z=video267955976_456239310%2Fvideos459488160%2Fpl_459488160_-2">  
-                    <img src="images/1.jpg" alt="" class="img__brand_left">
-                  </a>
-                  </div>
-                <p class="block-wrap__text">
-                  Программа имеет социально-педагогическую направленность и ориентирована на развитие творческой личности учащегося, формирование и развитие его творческих способностей, удовлетворение его индивидуальных потребностей в интеллектуальном, нравственном, физическом совершенствовании, адаптацию к жизни в обществе, организацию свободного времени, профессиональную ориентацию. Она нацелена на всестороннее развитие обучающихся, а также выявление их личностных приоритетов и индивидуальных творческих способностей. 
-                </p>
-                 <p class="block-wrap__text">
-                  Гитара – один из самых распространенных и любимых музыкальных инструментов в мире. В какой бы стране мы ни оказались, мы обязательно увидим и услышим гитару. На сельских праздниках, в дружеском кругу, на концертной эстраде, по радио и телевидению – всюду звучит ее чарующий голос.
-                </p>
-               <div class="img">
-                  <a href="https://vk.com/videos459488160?z=video267955976_456239101%2Fpl_459488160_-2">  
-                    <img src="images/5.jpg" alt="" class="img__brand_right">
-                  </a>
-                  </div>
-                 <p class="block-wrap__text">
-                  Чем же пленила гитара? Своим негромким, волнующим, редкой красоты тембром звуком, удобством и портативностью в обиходе, сравнительно невысокой ценой. Своими большими художественно-исполнительскими возможностями: ей доступны все художественно-исполнительскими возможностями: ей доступны все жанры – от аккомпанемента простейшей песни до сложнейших концертов в сопровождении симфонического оркестра. Своими богатейшими традициями: ее история насчитывает несколько тысячелетий, много славных имен записано на ее страницах.
-                </p>
-                <p class="block-wrap__text">
-                 В настоящее время гитара признана концертным инструментом с интересным и богатым репертуаром. Концерты гитаристов проходят в крупнейших филармонических залах наряду с концертами пианистов, скрипачей и виолончелистов и пользуются не меньшим успехом.     
-                </p>
-             </article>
-               <article class="block-wrap__article">  
-                <h2 class="headline"> Зачем детям заниматься музыкой </h2> 
-               <div class="img">
-                  <a href="https://vk.com/videos459488160?z=video267955976_456239104%2Fpl_459488160_-2">  
-                    <img src="images/6.jpg" alt="" class="img__brand_left">
-                  </a>
-                  </div>
-                <p class="block-wrap__text">
-                  Занятия музыкой формируют постоянную память ребенка через постоянное обновление материала. Обучение игры на гитаре начинается с простого знакомства с нотной грамотой, потом к умению играть простые мелодии, запоминать песни, аккорды. Со временем это переходит в исполнение более сложных музыкальных произведении. Музыка гармонично развивает сознание, так как задействует логическое  и пространственное мышление. 
-                </p>
-                 <p class="block-wrap__text">
-                  Систематические занятия музыкой приучают к организованности и самодисциплине своего внутреннего мира. Музыка развивает терпение, приучает к аккуратности в работе, улучшает сосредоточенность, формирует волю и характер, умение вовремя подготовиться к различным концертам, экзаменам, приучает быть организованным. 
-                </p>
-                <div class="img">
-                  <a href="https://vk.com/id267955976?z=video267955976_456239420%2Fvideos267955976%2Fpl_267955976_-2">  
-                    <img src="images/8.jpg" alt="" class="img__brand_right">
-                  </a>
-                  </div>
-                 <p class="block-wrap__text">
-                  Через занятия музыкой улучшается мелкая моторика и реакция движения. В музыке тренируется точность и безошибочность даже при выполнении нескольких задач одновременно. От этого в будущем будет зависеть уровень памяти и речи, координации движения, уровень мышления.
-                </p>
-             </article>
-              <article class="block-wrap__article">  
-                <h2 class="headline"> Содержание образовательной области <span class="span">1-го года </span> обучения </h2> 
-               <div class="img">
-                  <a href="">  
-                    <img src="images/9.jpg" alt="" class="img__brand_left">
-                  </a>
-                </div>
-                <p class="block-wrap__text">
-                 На 1-м году обучения значительное место отводится освоению начальных элементарных знаний, умений и навыков игры на инструменте, посадка и постановке игрового аппарата, освоению художественных возможностей инструмента. Дети знакомятся с основами музыкальной грамоты, теории, гармонии. На этом этапе закладывается основы музыкального воспитания, происходит накопление музыкальных впечатлений.
-                </p>
-              </article>
-                 <article class="block-wrap__article">   
-                 <h3 class="headline">Актуальность программы </h3>
-                 <p class="block-wrap__text">
-                 определяется тем, что она направлена на развитие творческих способностей учащихся, решение актуальных задач социального, культурного и профессионального самоопределения учащихся; способствует профилактике асоциального поведения детей; укрепляет физическое и психическое здоровье, заключается в том, что она призвана помочь ребятам   развивать их  коммуникативные способности - непременное условие для успешной социализации. 
-                </p>
-                 <ul class="block-list__list-text">
-                <h3 class="headline">Принципы построения программы</h3> 
-                    <li class="block-list__item">
-                         Принцип постепенности и последовательности в воспитании исполнителя.
-                   </li>
-                    <li class="block-list__item">
-                      Принцип индивидуального подхода заключается в применении разнообразных методик, сообразующихся с тем, что каждый человек – неповторимая индивидуальность.
-                    </li>
-                     <li class="block-list__item">
-                      Принцип постепенности и последовательности говорит о необходимости планомерного усложнения заданий, так и исполнительских требований.
-                    </li>
-                     <li class="block-list__item">
-                     Принцип «от простого к сложному» является общепедагогическим.
-                    </li>
+                <article class="block-wrap__article">
+                    <h2 class="headline"> Введение </h2>
+                    <div class="img">
+                        <div>
+                            <a href="https://vk.com/id459488160?z=video267955976_456239310%2Fvideos459488160%2Fpl_459488160_-2">
+                                <img src="images/1.jpg" alt="" class="img__brand_left">
+                            </a>
+                        </div>
+
+                    </div>
+                    <p class="block-wrap__text">
+                        Программа имеет социально-педагогическую направленность и ориентирована на развитие творческой
+                        личности учащегося, формирование и развитие его творческих способностей, удовлетворение его
+                        индивидуальных потребностей в интеллектуальном, нравственном, физическом совершенствовании,
+                        адаптацию к жизни в обществе, организацию свободного времени, профессиональную ориентацию. Она
+                        нацелена на всестороннее развитие обучающихся, а также выявление их личностных приоритетов и
+                        индивидуальных творческих способностей.
+                    </p>
+                    <p class="block-wrap__text">
+                        Гитара – один из самых распространенных и любимых музыкальных инструментов в мире. В какой бы
+                        стране мы ни оказались, мы обязательно увидим и услышим гитару. На сельских праздниках, в
+                        дружеском кругу, на концертной эстраде, по радио и телевидению – всюду звучит ее чарующий голос.
+                    </p>
+                    <div class="img">
+                        <a href="https://vk.com/videos459488160?z=video267955976_456239101%2Fpl_459488160_-2">
+                            <img src="images/5.jpg" alt="" class="img__brand_right">
+                        </a>
+                    </div>
+                    <p class="block-wrap__text">
+                        Чем же пленила гитара? Своим негромким, волнующим, редкой красоты тембром звуком, удобством и
+                        портативностью в обиходе, сравнительно невысокой ценой. Своими большими
+                        художественно-исполнительскими возможностями: ей доступны все художественно-исполнительскими
+                        возможностями: ей доступны все жанры – от аккомпанемента простейшей песни до сложнейших
+                        концертов в сопровождении симфонического оркестра. Своими богатейшими традициями: ее история
+                        насчитывает несколько тысячелетий, много славных имен записано на ее страницах.
+                    </p>
+                    <p class="block-wrap__text">
+                        В настоящее время гитара признана концертным инструментом с интересным и богатым репертуаром.
+                        Концерты гитаристов проходят в крупнейших филармонических залах наряду с концертами пианистов,
+                        скрипачей и виолончелистов и пользуются не меньшим успехом.
+                    </p>
                 </article>
-                <article class="block-wrap__article">   
-                 <h3 class="headline"> Вводное занятие </h3>
-                 <div class="img">
-                  <a href="">  
-                    <img src="images/9.jpg" alt="" class="img__brand_left">
-                  </a>
-                  </div>
-                 <p class="block-wrap__text">
-                 Знакомство с педагогом.  Знакомство с задачами в обучении моей программы. 
-                </p>
+                <article class="block-wrap__article">
+                    <h2 class="headline"> Зачем детям заниматься музыкой </h2>
+                    <div class="img">
+                        <a href="https://vk.com/videos459488160?z=video267955976_456239104%2Fpl_459488160_-2">
+                            <img src="images/6.jpg" alt="" class="img__brand_left">
+                        </a>
+                    </div>
+                    <p class="block-wrap__text">
+                        Занятия музыкой формируют постоянную память ребенка через постоянное обновление материала.
+                        Обучение игры на гитаре начинается с простого знакомства с нотной грамотой, потом к умению
+                        играть простые мелодии, запоминать песни, аккорды. Со временем это переходит в исполнение более
+                        сложных музыкальных произведении. Музыка гармонично развивает сознание, так как задействует
+                        логическое и пространственное мышление.
+                    </p>
+                    <p class="block-wrap__text">
+                        Систематические занятия музыкой приучают к организованности и самодисциплине своего внутреннего
+                        мира. Музыка развивает терпение, приучает к аккуратности в работе, улучшает сосредоточенность,
+                        формирует волю и характер, умение вовремя подготовиться к различным концертам, экзаменам,
+                        приучает быть организованным.
+                    </p>
+                    <div class="img">
+                        <a href="https://vk.com/id267955976?z=video267955976_456239420%2Fvideos267955976%2Fpl_267955976_-2">
+                            <img src="images/8.jpg" alt="" class="img__brand_right">
+                        </a>
+                    </div>
+                    <p class="block-wrap__text">
+                        Через занятия музыкой улучшается мелкая моторика и реакция движения. В музыке тренируется
+                        точность и безошибочность даже при выполнении нескольких задач одновременно. От этого в будущем
+                        будет зависеть уровень памяти и речи, координации движения, уровень мышления.
+                    </p>
                 </article>
-                <article class="block-wrap__article">   
-                 <h3 class="headline">Знакомство с инструменто.</h3>  
-                 <ul>
-                     <li>
-                        <a href="">посадка,</a>
-                    </li>
-                     <li>
-                        <a href="">постановка игрового аппарата.</a>
-                     </li>
-                 </ul>
-                 <p class="block-wrap__text">
-                 Устройство инструмента. Демонстрация художественно-исполнительских возможностей гитары. Ознакомление с основными выразительными возможностями гитары, посадка за инструмент, постановка правой и левой руки.
-                </p>
-                 
+                <article class="block-wrap__article">
+                    <h2 class="headline"> Содержание образовательной области <span class="span">1-го года </span>
+                        обучения </h2>
+                    <div class="img">
+                        <a href="">
+                            <img src="images/9.jpg" alt="" class="img__brand_left">
+                        </a>
+                    </div>
+                    <p class="block-wrap__text">
+                        На 1-м году обучения значительное место отводится освоению начальных элементарных знаний, умений
+                        и навыков игры на инструменте, посадка и постановке игрового аппарата, освоению художественных
+                        возможностей инструмента. Дети знакомятся с основами музыкальной грамоты, теории, гармонии. На
+                        этом этапе закладывается основы музыкального воспитания, происходит накопление музыкальных
+                        впечатлений.
+                    </p>
                 </article>
-                <article class="block-wrap__article">   
-                <h3 class="headline">Основы музыкальной грамоты</h3>
-                
-                <ul class="block-list__list-text">
-                <h3 class="headline">Теория</h3> 
-                    <li class="block-list__item">
-                        <a href="  "> Освоение базовых компонентов нотной грамоты</a>
-                   </li>
-                    <li class="block-list__item">
-                        <a href="  ">нотоносец, скрипичный и басовый ключи,</a>
-                    </li>
-                    <li class="block-list__item">
-                        <a href=" ">обозначение нот</a>
-                        
-                        <ul>
-                            <li>
-                                <a href=" ">графическое,</a> 
-                            </li>
-                            <li><a href=" ">слоговое,</a>
-                            </li>
-                            <li>
-                                <a href="  ">буквенное,</a>
-                            </li>
-                        </ul>
-                     </li>
-                    <li class="block-list__item">
-                        <a href="  ">знаки альтерации,</a>
-                    </li>
-                    <li class="block-list__item">
-                        <a href="  "> название аккордов,</a>
-                    </li>
-                    <li class="block-list__item">
-                      <a href=""> длительности,</a>
-                    </li>
-                    <li class="block-list__item">
-                        <a href=" "> паузы,</a>
-                    </li>
-                    <li class="block-list__item">
-                        <a href=" ">тактовый размер </a>
-                        <ul>
-                            <li><a href=" ">2/4,</a></li>
-                            <li><a href=""> 3/4,</a></li>
-                            <li><a href="">4/4,</a></li>
-                        </ul>
-                     </li>
-                    <li class="block-list__item">
-                      <a href=""> мажор,</a>
-                     </li>
-                     <li class="block-list__item">
-                      <a href=""> минор,</a>
-                    </li>
-                    <li class="block-list__item">
-                      <a href=""> штрихи, </a>
-                    </li>
-                      <li class="block-list__item">
-                        <a href=""> динамические оттенки.</a>
-                    </li>
-                     <li class="block-list__item">
-                      <a href=""> Понятие о фразе:</a>
-                       <ul>
-                            <li class="block-list__item"> 
-                                <a href="  ">предложении,</a>
+                <article class="block-wrap__article">
+                    <h3 class="headline">Актуальность программы </h3>
+                    <p class="block-wrap__text">
+                        определяется тем, что она направлена на развитие творческих способностей учащихся, решение
+                        актуальных задач социального, культурного и профессионального самоопределения учащихся;
+                        способствует профилактике асоциального поведения детей; укрепляет физическое и психическое
+                        здоровье, заключается в том, что она призвана помочь ребятам развивать их коммуникативные
+                        способности - непременное условие для успешной социализации.
+                    </p>
+                    <ul class="block-list__list-text">
+                        <h3 class="headline">Принципы построения программы</h3>
+                        <li class="block-list__item">
+                            Принцип постепенности и последовательности в воспитании исполнителя.
+                        </li>
+                        <li class="block-list__item">
+                            Принцип индивидуального подхода заключается в применении разнообразных методик,
+                            сообразующихся с тем, что каждый человек – неповторимая индивидуальность.
+                        </li>
+                        <li class="block-list__item">
+                            Принцип постепенности и последовательности говорит о необходимости планомерного усложнения
+                            заданий, так и исполнительских требований.
+                        </li>
+                        <li class="block-list__item">
+                            Принцип «от простого к сложному» является общепедагогическим.
+                        </li>
+                </article>
+                <article class="block-wrap__article">
+                    <h3 class="headline"> Вводное занятие </h3>
+                    <div class="img">
+                        <a href="">
+                            <img src="images/9.jpg" alt="" class="img__brand_left">
+                        </a>
+                    </div>
+
+                    <p class="block-wrap__text">
+                        Знакомство с педагогом. Знакомство с задачами в обучении моей программы.
+                    </p>
+                </article>
+                <article class="block-wrap__article">
+                    <h3 class="headline">Знакомство с инструментом.</h3>
+                    <div class="clear"></div>
+                    <ul class="block-list__list-text">
+                        <li class="block-list__item">
+                            <a href="" class="block-list__link">посадка,</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="" class="block-list__link">постановка игрового аппарата.</a>
+                        </li>
+                    </ul>
+                    <p class="block-wrap__text">
+                        Устройство инструмента. Демонстрация художественно-исполнительских возможностей гитары.
+                        Ознакомление с основными выразительными возможностями гитары, посадка за инструмент, постановка
+                        правой и левой руки.
+                    </p>
+
+                </article>
+                <article class="block-wrap__article">
+                    <h3 class="headline">Основы музыкальной грамоты</h3>
+
+                    <ul class="block-list__list-text">
+                        <h3 class="headline">Теория</h3>
+                        <li class="block-list__item">
+                            <a href=" " class="block-list__link"> Освоение базовых компонентов нотной грамоты</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="  " class="block-list__link">нотоносец, скрипичный и басовый ключи,</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href=" " class="block-list__link">обозначение нот</a>
+
+                            <ul>
+                                <li>
+                                    <a href=" " class="block-list__sub-link">графическое,</a>
+                                </li>
+                                <li>
+                                    <a href=" " class="block-list__sub-link">слоговое,</a>
+                                </li>
+                                <li>
+                                    <a href="  " class="block-list__sub-link">буквенное,</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="  " class="block-list__link">знаки альтерации,</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="  " class="block-list__link"> название аккордов,</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="  " class="block-list__link"> длительности,</a>
+
+                        </li>
+                        <li class="block-list__item">
+                            <a href=" " class="block-list__link"> паузы,</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href=" " class="block-list__link">тактовый размер </a>
+                            <ul class="bloc-list__sub-list">
+                                <li class="bloc-list__sub-item">
+                                    <a href=" " class="block-list__sub-link">2/4,</a>
+                                </li>
+                                <li class="bloc-list__sub-item">
+                                    <a href="" class="block-list__sub-link"> 3/4,</a>
+                                </li>
+                                <li class="bloc-list__sub-item">
+                                    <a href="" class="block-list__sub-link">4/4,</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="block-list__item">
+                            <a class="block-list__link" href="  "> мажор, минор,</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="  " class="block-list__link"> штрихи,</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="  " class="block-list__link"> динамические оттенки.</a>
+
+                        </li>
+                        <li class="block-list__item">
+                            <a href=" " class="block-list__link"> Понятие о фразе:</a>
+                        </li>
+                        <li class="block-list__item">
+
+                            <ul class="bloc-list__sub-list">
+                                <li class="block-list__sub-item">
+                                    <a href="  " class="block-list__sub-link">предложении,</a>
+                                </li>
+                                <li class="block-list__sub-item">
+                                    <a href=" " class="block-list__sub-link">периоде</a>
+                                </li>
+                                <li class="block-list__sub-item">
+                                    <a href=" " class="block-list__sub-link">куплете.</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="block-list__item">
+                            Первичные музыкальные жанры:
+                            <ul class="block-list__sub-list">
+                                <li class="block-list__sub-item">
+                                    <a href=" " class="block-list__sub-link">песня,</a>
+                                </li>
+                                <li class="block-list__sub-item">
+                                    <a href="" class="block-list__sub-link">танец,</a>
+                                </li>
+                                <li class="block-list__sub-item">
+                                    <a href="" class="block-list__sub-link">марш.</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article class="block-wrap__article">
+                    <h3 class="headline"> Практика </h3>
+                    <ul class="block-list__list-text">
+                        <li class="block-list__item">
+                            <a href="" class="block-list__link">Запись музыки с помощью нот</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="" class="block-list__link">Отработка звучания аккордов</a>
+                        </li>
+                        <li class="block-list__item">
+                            <a href="" class="block-list__link">Разучивание музыкальных произведений.</a>
+                        </li>
+                    </ul>
+                    <article>
+                        <h2 class="headline"> Развитие исполнительской техники</h2>
+                        <ul class="block-list__list-text">
+                            <h3 class="headline">Теория</h3>
+                            <li class="block-list__item">
+                                <a href="" class="block-list__link">Понятие «игровой аппарат». </a>
                             </li>
                             <li class="block-list__item">
-                                <a href=" ">периоде</a> 
+                                <a href="" class="block-list__link">Правила посадки за инструментом</a>
                             </li>
                             <li class="block-list__item">
-                                <a href=" ">куплете.</a>
-                             </li>
-                        </ul>
-                      
-                    </li>
-                     <li class="block-list__item">
-                      <a href=""> Первичные музыкальные жанры:</a>
-                         <ul>
-                            <li class="block-list__item">
-                              <a href=" ">песня,</a> 
+                                <a href="" class="block-list__link"> Ознакомление с приемами игры</a>
+                                <ul class="block-list__sub-list">
+                                    <li class="block-list__sub-itemlink">
+                                        <a href=" " class="block-list__sub-link">Тирандо</a>
+                                    </li>
+                                    <li class="block-list__sub-item">
+                                        <a href="" class="block-list__sub-link"> Аппояндо</a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="block-list__item"><a href="">танец,</a></li>
-                            <li class="block-list__item"><a href="">марш.</a></li>
+                            <li class="block-list__item">
+                                <a href="" class="block-list__link">Правила посадки за инструментом</a>
+                            </li>
+                            <li class="block-list__item">
+                                <a href="" class="block-list__link">Правила посадки за инструментом</a>
+                            </li>
                         </ul>
-                   </li>
-               </ul>
-               </article>
-               <article class="block-wrap__article">    
-                <h3 class="headline"> Практика </h3>
-                <ul>
-                   <li>
-                    <a href="">Запись музыки с помощью нот</a>
-                   </li>
-                     <li>
-                        <a href="">Отработка звучания аккордов</a>
-                    </li>
-                    <li>
-                        <a href="">Разучивание музыкальных произведений.</a>
-                    </li>
-                </ul>
-                <article>
-                 <h2 class="headline">  Развитие исполнительской техники</h2> 
-                 <ul>
-                       <h3 class="headline">Теория</h3>  
-                       <li><a href="">Понятие «игровой аппарат». </a></li>
-                       <li><a href="">Правила посадки за инструментом</a></li>
-                       <li><a href=""> Ознакомление с приемами игры</a>
-                        <ul>
-                            <li><a href=" ">Тирандо</a></li>
-                            <li><a href=""> Аппояндо</a></li>
-                        </ul>
-                       </li>
-                       <li><a href="">Правила посадки за инструментом</a></li>
-                       <li><a href="">Правила посадки за инструментом</a></li>
-                   </ul>  
-                </article>
-                <p class="block-wrap__text">
-                 
-                </p>
-              </article> <!-- block-wrap__article -->
-                
+                    </article>
+                    <p class="block-wrap__text">
+
+                    </p>
+                </article> <!-- block-wrap__article -->
+
             </section>
             <section class="block-wrap__left">
-              <article class="block-wrap__article">  
-                <h2 class="headline"> Содержание образовательной области <span class="span">2-го года </span>обучения </h2> 
-                <div class="img">
-                    <img src="" alt="" class="img__brand">
-                </div>
-                <p class="block-wrap__text">
-                  
-                </p>
-              </article> <!-- block-wrap__article -->
+                <article class="block-wrap__article">
+                    <h2 class="headline"> Содержание образовательной области <span class="span">2-го года </span>обучения
+                    </h2>
+                    <div class="img">
+                        <img src="" alt="" class="img__brand">
+                    </div>
+                    <p class="block-wrap__text">
+
+                    </p>
+                </article> <!-- block-wrap__article -->
             </section>
             <section class="block-wrap__left">
-              <article class="block-wrap__article">  
-                <h2 class="headline"> Содержание образовательной области <span class="span">3-го года </span> обучения</h2> 
-                <div class="img">
-                    <img src="" alt="" class="img__brand">
-                </div>
-                <p class="block-wrap__text">
-                 
-                </p>
-              </article> <!-- block-wrap__article -->
-                
+                <article class="block-wrap__article">
+                    <h2 class="headline"> Содержание образовательной области <span class="span">3-го года </span>
+                        обучения</h2>
+                    <div class="img">
+                        <img src="" alt="" class="img__brand">
+                    </div>
+                    <p class="block-wrap__text">
+
+                    </p>
+                </article> <!-- block-wrap__article -->
+
             </section>
         </div> <!-- w-section -->
-        <!-- правый контент -->
-        <aside class="block-wrap__right">
-           
-            <nav class="sidebar">
-                <ul class="links-list">
-                    <li class="links-list__item">
-                        <h2 class="links-list__title">Глава</h2>
-                        <ul class="links-list__sub-list sub-block">
-                            <li class="sub-block__item">
-                                <a href="" class="sub-block__link">Введение</a>
-                            </li>
-                            <li class="sub-block__item ">
-                                <a href="" class="sub-block__link"> 1 год обучения</a>
-                            </li>
-                            <li class="sub-block__item">
-                                <a href="" class="sub-block__link">2 год обучения</a>
-                            </li>
-                            <li class="sub-block__item">
-                                <a href="Содержание образовательной области 3-го года обучения" class="sub-block__link"> 3 год обучения</a>
-                            </li>
-                        </ul>
-                    </li>
 
-                </ul>
-            </nav>
-        </aside>
     </div> <!-- wrap -->
-     <div class="social-icons">
+    <div class="social-icons">
         <div class="dws-button dws-vk">
-            <a href="https://vk.com/id459488160" class="social-icons__link" target="_blank"> <i class="fab fa-vk"></i></a>
+            <a href="https://vk.com/id459488160" class="social-icons__link" target="_blank"> <i
+                    class="fab fa-vk"></i></a>
             <div class="dws-share">
-               
+
             </div>
-       </div> 
-    </div> 
-     <footer class="footer">
+        </div>
+    </div>
+    <footer class="footer">
         <div class="footer__copyright">
             Библия музыканта &copy; 2018 <br>
-          <a href="" class="footer__link">VK</a>
         </div>
-      </footer>
+        <div>
+            <a href="" class="footer__link">VK</a>
+        </div>
+    </footer>
 </div> <!-- wrapper -->
+
+<script src="js/sstu_script.js"></script>
 </body>
 </html>

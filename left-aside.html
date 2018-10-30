@@ -20,7 +20,10 @@
 </head>
 <body>
 	<style>
-		.main {
+		body.main-open nav.main {
+			margin: 0;
+		}
+		.main{  
 			background: #f5f6f7;
 			min-height: 100vh;
 			padding: 20px;
@@ -32,21 +35,28 @@
 			z-index: 10;
 			overflow-y: auto;
 		}
+		.floar-left {
+			float: left;
+		}
 		.main__scroll {
 
 		}
-		.ain__top-title {
-
+		.main__top-title {
+           
 		}
 		.main__title {
-          
+          color: #3d4444;
+          border-bottom:2px solid #0b8512;
+          display: inline-block;
+          padding: 0 0 10px 0;
 		}
 		.main__list {
+			display: block;
            margin: 0 0 15px 0;
            padding: 0 0 0 15px;
 		}
 		.main__item {
-
+        list-style: none;
 		}
 
 		.main__link {
@@ -62,6 +72,7 @@
 		}
 		.sub-block__item {
             border-top:1px solid rgba(210,215,217,0.75);
+            list-style: none;
 		}
 		.sub-block__link {
 			padding: 17px 0;

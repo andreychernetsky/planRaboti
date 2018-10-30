@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>прокрутка</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<style>
+body,
+/*html {
+	margin: 0;
+	padding: 0;
+}
+.column-lef {
+   float: left;
+   width: 30%;
+   background: #aef;
+}
+.colum-right {
+	margin-left: 30%;
+	width: 70%;
+	background: tan;
+	overflow: auto;
+}
+.inner {
+	margin: 1em;
+	font-size: 130%;
+}*/
+/*#fixd-menu {
+	float: left;
+	margin: 0 1em .5em 0px;
+	border:1px solid black;
+	text-align: center;
+	background: #fff;
+}
+.fixed {
+	position: fixed;
+	top:0;
+	left: 0;
+}*/
+
+</style>
+	 <!-- <header class="header-top">
+        <div class="logo">
+            <a href="https://andreychernetsky.github.io/news-block/index.html" class="logo__link">
+                <img src="images/1387.jpg" alt="" class="logo__brand">
+            </a>
+        </div>
+        <nav class="nav-menu" id="fixd-menu">
+            <ul class="nav-menu__list">
+                <li class="nav-menu__item">
+                  <a href="https://andreychernetsky.github.io/first-lesson/public/index.html" class="nav-menu__link">Главная</a>
+                </li>
+                <li class="nav-menu__item">
+                  <a href="https://andreychernetsky.github.io/site-for-git/#" class="nav-menu__link">о себе</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="contacts__phone">
+            <i class="fa fa-phone-square" aria-hidden="true">+375 44 47-39-481</i>
+        </span>
+        <div class="btn-menu">
+            <div class="btn-menu__line"></div>
+            <div class="btn-menu__line"></div>
+            <div class="btn-menu__line"></div>
+        </div>
+    </header> -->
+   
+  <!-- 
+ -->
+  
+    <script>
+
+    	// let avatarElem =document.getElementById('fixd-menu');
+    	// let avatarSourceBottom = avatarElem.getBoundingClientRect().bottom+window.pageYOffset;
+
+    	// window.onscroll = function() {
+    	// 	if(avatarElem.classList.contains('fixed')&&window.pageYOffset<avatarSourceBottom){
+    	// 		avatarElem.classList.remove('fixed');
+    	// 	} else if(window.pageYOffset > avatarSourceBottom){
+     //           avatarElem.classList.add('fixed')
+    	// 	}
+    	// }
+// Вывести числа в последовательности: 4 7 10 13 с помощью цикла.
+      // function showNumbers(min,max,step) {
+      //   let numArr = [];
+
+      //     // let numArr = new Array();
+      //   for(let i = min; i <= max; i+=step){
+      //        numArr=numArr.concat(i);
+      //       // numArr.push(i);
+
+      //   }
+      //    return numArr;
+      // }
+
+      //  console.log(showNumbers(4,13,3));
+
+
+// var arrays = [[1,2,3], [4,5], [6]];
+
+// function flatten(arr) {
+//     var flat = [];
+//     for (var i = 0; i < arr.length; i++) {
+//         flat = flat.concat(arr[i]);
+//     }
+//     return flat;
+// }
+// console.log(flatten(arrays));
+
+
+// lesson2
+       // Вывести числа 50 49 48... 0 до нуля
+       
+// function showNumbers(min,max,step,reverse) {
+//         let numArr = [];
+         
+//           // let numArr = new Array();
+//         for(let i = max; i >= min; i-=step){
+//              numArr=numArr.concat(i);
+//             // numArr.push(i);
+
+//         }
+       
+//          // if(reverse===true) {
+//          //     return numArr.reverse();
+//          // } else{
+//          //       return numArr;
+//          // }
+           
+//          return (reverse) ? numArr.reverse() : numArr;
+         
+      
+// }
+//        console.log(showNumbers(0,50,1,false));
+//        console.log(showNumbers(4,13,3,true));
+
+//        // С помощью цикла напечатайте таблицу умножения на 7 от 1 до 9.
+       
+//         function numYmnogit (num) {
+//            // let strShove = '7 X 1 = 7';
+//            for (let i = 1; i < 9; i++) {
+//                let result = i * num;
+//                document.write(num + ' X ' + i + ' = ' +  result + '<br />');
+//               }
+//               return null;
+//            }
+//        numYmnogit (7);
+//        numYmnogit (9);
+
+       // lesson4
+     //Вводится строка, содержащая буквы, целые неотрицательные числа и иные символы. Требуется все числа, которые встречаются в строке, поместить в отдельный целочисленный массив. Например, если дана строка "data 48 call 9 read13 blank0a", то в массиве должны оказаться числа 48, 9, 13 и 0.
+
+
+// function strNumber (str) {
+//   let arr1 = str.split('');
+//   let res = [];
+//   let strNum = '';
+//   // console.log(arr1);
+//   for (let i = 0; i < arr1.length; i++) {
+//     if(!isNaN(arr1[i] )){
+//       if(arr1[i] !==' '){
+//         strNum += arr1[i];
+//       } else {
+//         if(strNum.length){
+//           res.push(strNum);
+//           strNum = '';
+//         }
+//       }
+//     }
+//   }
+
+//   console.log(res.join());
+// }
+// strNumber( "data 48 call 9 read13 blank0a");
+
+
+// задача
+
+
+// 1)пишем функцию и параметром передаем str
+// 2)создаем новую переменную и помещаем в нее str разбитую на массив
+//3) создаем переменную с пустой строкой let strNum = '';
+// 4) пишем цикл и проходим по нашему массиву arr1
+// 5) фильтруем наш массив, чтобы остались только числа
+// 6) избавляемся от пробелов и отлавливаем число которое добавляем в строку
+// 7) добавляем числа в массив
+// 8) склеиваем все в строку
+
+// function strNumber(str) { //1
+//   let arr1 = str.split(''); //2
+//   let res = []; //3
+//   let strNum = '';
+//   for(let i = 0; i < arr1.length; i++) { //4
+//     if(!isNaN(arr1[i])) {
+//       if(arr1[i] !==' '){
+//         strNum+=arr1[i]; //6
+
+//       }
+//     } else {
+//       if(strNum.length){
+//         res.push(strNum); //7
+//         strNum = '';
+//       }
+//     }
+//   }
+//   console.log(res.join());
+// }
+// strNumber("data 48 call 9 read13");
+
+// У нас есть массив [1,1,1,2,2,2,2,3], необходимо вывести 1,2,3, то есть вывести без дублей
+
+// function unique(arr) {
+//     let result = [];
+
+//    nextInput:
+//     for (let i = 0; i < arr.length; i++) {
+//         let str = arr[i];
+//           for(let j = 0; j < result.length; j++) {
+//             if(result[j] === str) continue nextInput;
+//           }
+//           result.push(str);
+//     }
+//     return result;
+
+// }
+// let string = [1,1,1,2,2,2,2,3];
+// document.write(unique(string));
+
+// второй вариант
+
+// function unique(arr) {
+//     let obj = {};
+
+//     for(let i = 0; i < arr.length; i++) {
+//         let str = arr[i];
+//         obj[str] = true;
+//       }
+//     return Object.keys(obj);
+// }
+// let string = [1,1,1,2,2,2,2,3];
+// document.write(unique(string));
+
+
+
+// let filter = function (arr) {
+// let newArr = [];
+// let i = arr.length-1;
+// let tmp = {};
+// for(; i>=0; i--) {
+//     if(arr[i] in tmp) continue;
+//     newArr.push(arr[i]);
+//     tmp[arr[i]]=1;
+// }
+// return newArr;
+// };
+// let arr = [1,1,1,2,2,2,2,3];
+// console.log(filter(arr.reverse()));
+
+let filter = function (arr) {
+  let tmp = {};
+  return arr.filter((a)=>{
+    return a in tmp ? 0 : tmp[a] = 1;
+  })
+};
+
+let arr = [1,1,1,2,2,2,2,3];
+document.write(filter(arr.reverse()));
+</script>
+</body>
+</html>
