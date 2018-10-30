@@ -252,6 +252,7 @@
 
     .block-wrap__article {
         /*outline: 1px solid blue;*/
+        width: 100%;
         margin: 5px;
         display: flex;
         flex-wrap: wrap;
@@ -331,13 +332,4 @@
         font-size: 100%;
     }
 
-    .block-wrap__article {
-        /*outline: 1px solid blue;*/
-        margin: 5px;
-    }
-
-    .block-wrap__text {
-        text-align: justify;
-        margin: 3px;
-    }
 }
