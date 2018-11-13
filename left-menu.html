@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--что такое .block-right *-->
+
+<style>
+    .block-right {
+        margin: 0;
+        padding: 0;
+        background: #fafbfd;
+        color: #676d79;
+        min-height: 100vh;
+        font-size: 17px;
+        font-family: "Open Sans Condensed" sans-serif;
+    }
+
+    .block-right * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .sidebar {
+        margin-left: 0;
+        background: #f5f6f7;
+        min-height: 100vh;
+        padding: 20px;
+        width: 250px;
+        transition: 300ms ease;
+        position: fixed;
+        top: 20%;
+        bottom: 0%;
+        z-index: 10;
+        overflow-y: auto;
+
+    }
+    .sub-block {
+        margin-left: 20px;
+        /*border-bottom: 2px solid #0b8512;*/
+    }
+
+    .sub-block__link {
+        color: #676d79;
+        text-decoration: none;
+        border-bottom: 1px dotted #676d79;
+
+    }
+
+    .sub-block__link:hover {
+        color: #0b8512;
+        border-bottom-color: transparent;
+    }
+
+    .links-list__sub-list {
+        color: #3d4493;
+        /*border-bottom: 2px solid #0b8512;*/
+        display: inline-block;
+        padding: 0 0 10px 0;
+    }
+
+    .links-list {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .links-list__item,
+    .sub-block__item {
+        list-style-type: none;
+
+    }
+
+    .links-list__item:hover > a {
+        color: #0b8512;
+        list-style: none;
+
+    }
+
+    .links-list__link,
+    .sub-block__link  {
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 0;
+        border-bottom: none;
+
+
+    }
+    .links-list__item::after{
+        border-bottom: 2px solid #0b8512;
+        width:70px;
+        display: block;
+        content: "";
+        margin: 0 auto;
+    }
+
+
+</style>
+<aside class="block-right">
+
+    <nav class="sidebar">
+        <ul class="links-list">
+            <li class="links-list__item">
+                <a href=" " class="links-list__link"> Введение</a>
+                <ul class="links-list__sub-list sub-block">
+                    <li class="sub-block__item">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                    <li class="sub-block__item ">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                    <li class="sub-block__item">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="links-list__item">
+                <a href=" " class="links-list__link"> 1 год обучения</a>
+                <ul class="links-list__sub-list sub-block">
+                    <li class="sub-block__item">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                    <li class="sub-block__item ">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="links-list__item">
+                <a href=" " class="links-list__link"> 2 год обучения</a>
+                <ul class="links-list__sub-list sub-block">
+                    <li class="sub-block__item">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                    <li class="sub-block__item ">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="links-list__item">
+                <a href=" " class="links-list__link">3 год обучения</a>
+                <ul class="links-list__sub-list sub-block">
+                    <li class="sub-block__item">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                    <li class="sub-block__item ">
+                        <a href="" class="sub-block__link">Освоение базовых компонентов нотной грамоты</a>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+</aside>
+</body>
+</html>
