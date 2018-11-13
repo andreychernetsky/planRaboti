@@ -107,5 +107,11 @@
         font-size: 1.3rem;
         margin-top: 3%;
     }
+    .social-icons{
+        display: none;
+    }
+    .footer {
+        width: 100%;
+    }
 }
 
