@@ -89,6 +89,11 @@ html {
     max-width: 1100px;
     margin: 0 auto;
 }
+.wrap-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .container {
     display: flex;
@@ -243,9 +248,81 @@ html {
     font-size: 1.3rem;
     margin-top: 3%;
 }
+/*содержание страицы*/
+.toc {
+    margin: 0 auto;
+    background:#fff;
+    width: auto;
+    border:1px solid #aaa;
+    padding:10px;
+    margin-bottom:1em;
+    width:auto;
+    display:table;
+    font-size: 95%;
+    font-family: 'Roboto', sans-serif;
+}
+.toc__text {
+    text-align:center;
+    font-weght:700;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+
+}
+.toc__number {
+    font-weght:400;
+    font-size:90%;
+}
+.toc__list {
+    margin-top:1em;
+}
+.toc__item {
+    line-height:1.8em;
+    background:0 0;
+    list-style-type:none;
+}
+.toc__link {
+    text-decoration:none;
+    text-shadow:none;
+    font-size: 1.3em;
+}
+.toc__link:hover {
+    color:#e54e53;
+    text-decoration:underline;
+}
+/*как брать аккорд*/
+.position{
+    max-width: 0 auto;
+}
+.position__list{
+list-style-type: none;
+}
+.position__item {
+    list-style: circle;
+}
 .img__brand {
     max-width: 100%;
 
+}
+/*таблица аккордов*/
+.table {
+    margin: .5em 0 1em;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table__tbody {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+.table__tr {
+
+}
+table__td {
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    padding: 10px;
 }
 
 .wrap-container__img {
