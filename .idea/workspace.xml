@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73cfe928-f8cb-44c5-aec8-179d4bed6809" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lesson1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lesson1.html" afterPath="$PROJECT_DIR$/lesson1.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="lesson1.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lesson1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="221" column="40" lean-forward="false" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="40" />
+            <state relative-caret-position="176">
+              <caret line="291" column="60" lean-forward="false" selection-start-line="291" selection-start-column="60" selection-end-line="291" selection-end-column="60" />
               <folding>
                 <element signature="e#8699#8705#1" expanded="true" />
                 <element signature="e#9745#9751#0" expanded="true" />
@@ -123,8 +121,8 @@
         <option value="$PROJECT_DIR$/index4.html" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/lesson1.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/lesson1.html" />
       </list>
     </option>
   </component>
@@ -214,12 +212,12 @@
       <workItem from="1542127494068" duration="3861000" />
       <workItem from="1542181688179" duration="2571000" />
       <workItem from="1542352634366" duration="127000" />
-      <workItem from="1542386867233" duration="3845000" />
+      <workItem from="1542386867233" duration="4517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42527000" />
+    <option name="totallyTimeSpent" value="43199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -231,7 +229,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
@@ -670,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lesson1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="221" column="40" lean-forward="false" selection-start-line="221" selection-start-column="31" selection-end-line="221" selection-end-column="40" />
+        <state relative-caret-position="176">
+          <caret line="291" column="60" lean-forward="false" selection-start-line="291" selection-start-column="60" selection-end-line="291" selection-end-column="60" />
           <folding>
             <element signature="e#8699#8705#1" expanded="true" />
             <element signature="e#9745#9751#0" expanded="true" />
